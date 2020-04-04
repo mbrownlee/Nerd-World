@@ -2,24 +2,23 @@
 const rideContainer = document.querySelector("#rideContainer")
 const showMeRiders = () => {
 
-    let allHeadings=""
+    let allHeadings = ""
     for (const ride of rideObjects) {
-        allHeadings += 
-        `<div class="ride">
-        <h2>${ride.name}</h2>
-        <ul>
-            ${
+        allHeadings += `<div class="ride">
+            <h2>${ride.name}</h2>
+            <ul>
+                ${
                 ride.riders.map(
                     (rider) => {
                         return `<li>${rider}</li>`
                     }
                 )
-            }
-        </ul>
+                }
+            </ul>
         </div>`
     }
-    
+
     console.log(allHeadings)
-    rideContainer.innerHTML=allHeadings
+    rideContainer.innerHTML = allHeadings
 }
 showMeRiders()
