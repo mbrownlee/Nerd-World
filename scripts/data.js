@@ -1,3 +1,22 @@
 // managing data
 
-const rides = ["JavaScript Jumbler", "HTML Hysteria", "CSS Carnage", "React Revenge"]
+
+
+const rideObjects = [
+    {
+        name: "JavaScript Jumbler",
+        riders: []
+    },
+    {
+        name: "HTML Hysteria",
+        riders: []
+    },
+    {
+        name: "CSS Carnage",
+        riders: []
+    },
+    {
+        name: "React Revenge",
+        riders: []
+    }
+]
